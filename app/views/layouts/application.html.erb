@@ -2,12 +2,17 @@
 <html>
 <head>
   <title>MovieMania</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<h1>MovieMania</h1>
 
+<div class="admin_links">
+  <%= link_to 'Add Genre', new_genre_path %>
+</div>
+<br/>
 <%= yield %>
 
 </body>
